@@ -4,12 +4,11 @@ const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
   poweredByHeader: false,
+  assetPrefix: '/',
+  basePath: '',
   images: {
     unoptimized: true,
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'vercel.com'
-    }]
+    domains: ['*']
   }
 };
 
