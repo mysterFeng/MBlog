@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+  swcMinify: true,
+  reactStrictMode: true,
+  poweredByHeader: false,
+  images: {
+    unoptimized: true,
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'vercel.com'
+    }]
+  }
 };
 
 module.exports = nextConfig;
